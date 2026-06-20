@@ -5,7 +5,6 @@
  * @returns {number}
  */
 function calculateSimpleRevenue(purchase, _product) {
-
     const { discount = 0, sale_price = 0, quantity = 0 } = purchase;
     const discountDecimal = Number(discount) / 100;
     const fullAmount = Number(sale_price) * Number(quantity);
@@ -21,7 +20,6 @@ function calculateSimpleRevenue(purchase, _product) {
  * @returns {number}
  */
 function calculateBonusByProfit(index, total, seller) {
-
     const { profit = 0 } = seller;
 
     if (index === 0) {
